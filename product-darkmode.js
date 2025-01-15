@@ -1,4 +1,5 @@
 const darkModeImage = document.getElementById("darkmode");
+const navpages = document.getElementById("nav-pages")
 // landing page
 const navbarItems = document.querySelectorAll("#nav-pages a");
 const headlinewhite = document.getElementById("headline-white");
@@ -16,6 +17,7 @@ const filtersToggle = document.querySelectorAll(".filters-toggle");
 
 darkModeImage.addEventListener("click", () => {
   if (document.body.style.backgroundColor === "black") {
+    navpages.style.backgroundColor = ""
     document.body.style.backgroundColor = "";
     // landing page
     navbarItems.forEach((item) => {
@@ -24,6 +26,7 @@ darkModeImage.addEventListener("click", () => {
 
     darkModeImage.src = "/img/dark-theme-svgrepo-com (1).svg"
     person.src = "/img/user-regular.svg"; 
+    toggle.src = "/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg";
 
     productCards.forEach((card) => {
       card.style.color = "";
@@ -39,7 +42,6 @@ darkModeImage.addEventListener("click", () => {
       });
     });
 
-    toggle.style.backgroundImage = "";
     headlinewhite.style.color = "";
 
     // landing page end
@@ -69,6 +71,8 @@ darkModeImage.addEventListener("click", () => {
     // product page end
   } else {
     document.body.style.backgroundColor = "black";
+    navpages.style.backgroundColor = "black"
+
 
     navbarItems.forEach((item) => {
       item.style.color = "white";
@@ -76,11 +80,9 @@ darkModeImage.addEventListener("click", () => {
 
     darkModeImage.src = "/img/white-theme.svg"; 
     person.src = "/img/whiteperson.png";
-
     headlinewhite.style.color = "white";
-    toggle.style.backgroundImage =
-      "url(/img/menu-button-of-three-horizontal-lines-svgrepo-com.svg)";
     person.style.backgroundImage = "url(/img/icons8-person-24.png)";
+    toggle.src = "/img/menu-button-of-three-horizontal-lines-svgrepo-com.svg";
 
     productCards.forEach((card) => {
       card.style.borderLeft = "1px solid white";
@@ -126,4 +128,10 @@ darkModeImage.addEventListener("click", () => {
 
     // product page end
   }
+});
+
+document.querySelectorAll('.product-card').forEach(card => {
+  card.addEventListener('click', () => {
+    window.location.href = 'selectedshoe.html';
+  });
 });
