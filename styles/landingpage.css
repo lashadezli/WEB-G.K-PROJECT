@@ -13,11 +13,13 @@ body {
 
 .navbar {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
-  justify-content: space-evenly;
-  gap: 200px;
+  justify-content: space-between;
+  /* gap: 200px; */
   margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .nav-pages {
   display: flex;
@@ -44,6 +46,7 @@ body {
   height: 40px;
   font-size: 16px;
   border: none;
+  border-radius: 40px;
   background-color: rgb(247, 247, 247);
 }
 
@@ -63,7 +66,7 @@ span.Red {
 .nav-main-components {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-main-components img.icon {
@@ -412,7 +415,6 @@ p.card-text span {
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
   box-sizing: border-box;
 }
 
@@ -533,7 +535,7 @@ p.card-text span {
 }
 
 /* 1170px */
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
   .products-list {
     display: grid;
     place-items: center;
@@ -585,40 +587,43 @@ p.card-text span {
   }
 }
 
-/* 900px */
-@media screen and (max-width: 900px) {
+@media (max-width: 1050px) {
   .nav-pages {
-    display: flex;
     flex-direction: column;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    left: -100%; 
+    left: -100%;
     width: 20%;
     height: 100%;
     background-color: ghostwhite;
-    padding:  60px 20px;
+    padding: 60px 20px;
     transition: left 0.3s ease-in-out;
-    z-index: 1000; 
-    overflow-y: auto; 
+    z-index: 1000;
+    overflow-y: auto;
   }
-
   .nav-pages.open {
-    left: 0; 
+    left: 0;
   }
-
   .toggle {
     display: block;
-    position: fixed; 
+    position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1100; 
+    z-index: 1100;
     cursor: pointer;
     font-size: 24px;
     background: none;
     border: none;
   }
+  .navbar{
+    justify-content: center;
+    gap: 20px;
+  }
+}
 
 
+/* 900px */
+@media screen and (max-width: 900px) {
   .new-trend {
     display: none;
   }

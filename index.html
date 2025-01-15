@@ -20,15 +20,16 @@
   <body>
 
     <div class="navbar">
-      <img src="/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" class="toggle" alt="">
-      <h1 class="Headline-navbar"><span class="Red">LA</span>shoes</h1>
-      <div class="nav-pages">
+      <img src="/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" class="toggle" id="toggle" alt="">
+      <h1 id="headline-white" class="Headline-navbar"><span class="Red">LA</span>shoes</h1>
+      <div class="nav-pages" id="nav-pages">
         <a href="/index.html">Home</a>
         <a href="/About.html">About</a>
         <a href="/Products.html">Products</a>
         <a href="/Contact.html">Contact</a>
       </div>
       <div class="nav-main-components">
+        <img src="./img/dark-theme-svgrepo-com (1).svg" id="darkmode" height="25px" width="25px" alt="" class="darkmode">
         <div class="input-container">
           <img
             src="./img/magnifying-glass-solid.svg"
@@ -38,7 +39,7 @@
           <input type="text" placeholder="Search..." />
         </div>
         <a href="/Signup.html"
-          ><img src="./img/user-regular.svg" alt="" class="icon" />
+          ><img src="./img/user-regular.svg" alt="" class="icon" id="person" />
         </a>
       </div>
     </div>
@@ -55,7 +56,7 @@
         <button>Shop Now ➜</button>
       </div>
     </div>
-    <div class="cards">
+    <div class="cards" id="cards">
       <div class="card" style="background-image: url(./img/collection-1.jpg)">
         <h1>men collections</h1>
         <button>Explore All ➜</button>
@@ -71,7 +72,7 @@
     </div>
 
     <div class="best-sellers">
-      <h1>Bestsellers product</h1>
+      <h1 id="bestseller">Bestsellers product</h1>
     </div>
 
     <div class="products-list">
@@ -89,7 +90,7 @@
         </figure>
         <div class="product-card-content">
           <p>Men / Woman</p>
-          <h2 class="name">Running Sneaker Shoes</h2>
+          <h2 class="name" id="">Running Sneaker Shoes</h2>
           <p class="price">$180.85</p>
         </div>
       </div>
@@ -107,7 +108,7 @@
         </figure>
         <div class="product-card-content">
           <p>Men / Woman</p>
-          <h2 class="name">Simple Fabric Shoe</h2>
+          <h2 class="name" id="">Simple Fabric Shoe</h2>
           <p class="price">$160.85</p>
         </div>
       </div>
@@ -125,7 +126,7 @@
         </figure>
         <div class="product-card-content">
           <p>Men / Woman</p>
-          <h2 class="name">Leather Mens Slipper</h2>
+          <h2 class="name" id="">Leather Mens Slipper</h2>
           <p class="price">$190.85</p>
         </div>
       </div>
@@ -143,7 +144,7 @@
         </figure>
         <div class="product-card-content">
           <p>Men / Woman</p>
-          <h2 class="name">Air Jordan 7 Retro</h2>
+          <h2 class="name" id="">Air Jordan 7 Retro</h2>
           <p class="price">$180.85</p>
         </div>
       </div>
@@ -199,7 +200,7 @@
             </figure>
             <div class="product-card-content">
               <p>Men / Woman</p>
-              <h2 class="name">Running Sneaker Shoes</h2>
+              <h2 class="name" id="">Running Sneaker Shoes</h2>
               <p class="price">$180.85</p>
             </div>
           </div>
@@ -216,7 +217,7 @@
             </figure>
             <div class="product-card-content">
               <p>Men / Woman</p>
-              <h2 class="name">Running Sneaker Shoes</h2>
+              <h2 class="name" id="">Running Sneaker Shoes</h2>
               <p class="price">$180.85</p>
             </div>
           </div>
@@ -378,6 +379,7 @@
         </div>
       </section>
     </div>
-    <script src="/navbar.js"></script>
+    <script src="navbar.js"></script>
+    <script src="index-darkmode.js"></script>
   </body>
 </html>

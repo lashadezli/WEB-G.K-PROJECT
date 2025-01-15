@@ -8,11 +8,13 @@ body {
 }
 .navbar {
   display: flex;
-  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 200px;
+  justify-content: space-between;
+  /* gap: 200px; */
+  /* width: 70%; */
   margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .input-container {
   position: relative;
@@ -29,6 +31,7 @@ body {
   font-size: 16px;
   border: none;
   background-color: rgb(247, 247, 247);
+  border-radius: 40px;
 }
 .navbar a {
   text-decoration: none;
@@ -48,7 +51,7 @@ span.Red {
 .nav-main-components {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .nav-main-components img.icon {
   width: 20px;
@@ -87,7 +90,6 @@ span.Red {
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
   box-sizing: border-box;
 }
 .footer__link--items h2 {
@@ -143,7 +145,6 @@ span.Red {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
 .contact-container {
   display: flex;
@@ -266,7 +267,8 @@ span.Red {
     gap: 20px;
   }
 }
-@media screen and (max-width: 900px) {
+
+@media (max-width: 1050px) {
   .nav-pages {
     flex-direction: column;
     position: fixed;
@@ -293,6 +295,10 @@ span.Red {
     font-size: 24px;
     background: none;
     border: none;
+  }
+  .navbar{
+    justify-content: center;
+    gap: 20px;
   }
 }
 
